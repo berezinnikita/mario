@@ -1,0 +1,118 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 02/27/2025 10:53:40 PM
+// Design Name: 
+// Module Name: audio_top
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+module i2s_driver (
+    input  wire        clk,       // System clock
+    input  wire        rst,     // Active low reset
+    output reg         sck,       // Serial clock
+    output reg         ws,        // Word select (LRCLK)
+    output reg         sd         // Serial data output
+);
+
+    parameter BCLK_DIV = 10;  // BCLK = clk / BCLK_DIV
+    parameter DATA_WIDTH = 16; // Number of bits per channel (16, 24, 32)
+
+    reg [4:0] bit_count;
+    reg [31:0] shift_reg;
+    reg [1:0] clk_div;
+    reg sending;
+    reg [31:0] left_data;
+    reg [31:0] right_data;
+    reg data_valid;
+    reg ready;
+
+    reg [1:0] clk_tmp_cnt = 2'b00;
+    reg clk_tmp = 1'b0;
+    reg [8:0] mclk_cnt = 9'b0;
+    
+    reg mclk;
+    reg reclrc_int;
+    reg bclk_int;
+    
+
+
+    // Generate clk_tmp (12.5 MHz from 25 MHz pclk)
+    always @(posedge clk) begin
+        if (clk_tmp_cnt == 2) begin
+            clk_tmp <= 1'b1;
+            clk_tmp_cnt <= 2'b00;
+        end else begin
+            clk_tmp_cnt <= clk_tmp_cnt + 1;
+            clk_tmp <= 1'b0;
+        end
+    end
+
+    // Process triggered by clk_tmp (mclk counter)
+    always @(posedge clk_tmp) begin
+        if (rst) begin
+            mclk_cnt <= 9'b0;
+        end else begin
+            mclk_cnt <= mclk_cnt + 1;
+        end
+    end
+
+    // Assign mclk, reclrc_int, and bclk_int
+    always @(*) begin
+        sck = mclk_cnt[0];
+        reclrc_int = mclk_cnt[8];
+        ws = mclk_cnt[2];
+    end
+    
+
+
+    always @(posedge bclk_int or posedge rst) begin
+        if (rst) begin
+            sd        <= 0;
+            bit_count <= 0;
+            shift_reg <= 0;
+            ready     <= 1;
+            clk_div   <= 0;
+            sending   <= 0;
+            left_data <= 32'haaaa_aaaa;
+            right_data<= 32'h0555_5555;
+
+        end else begin
+
+
+            // Data transmission logic
+
+                if (bit_count == 0 && ready) begin
+                    shift_reg <= left_data[31:(32-DATA_WIDTH)]; // Load left channel data
+                    ws <= 0; // Left channel transmission
+                    bit_count <= DATA_WIDTH;
+                    sending <= 1;
+                    ready <= 0;
+                end else if (bit_count == 0 && sending) begin
+                    shift_reg <= right_data[31:(32-DATA_WIDTH)]; // Load right channel data
+                    ws <= 1; // Right channel transmission
+                    bit_count <= DATA_WIDTH;
+                end else if (bit_count > 0) begin
+                    shift_reg <= {shift_reg[30:0], 1'b0}; // Shift out data
+                    bit_count <= bit_count - 1;
+                end else begin
+                    sending <= 0;
+                    ready <= 1;
+                end
+
+            // Output serial data
+            sd <= shift_reg[31];
+        end
+    end
+endmodule

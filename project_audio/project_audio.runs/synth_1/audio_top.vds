@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Mar 30 23:10:49 2025
+# Process ID: 24656
+# Current directory: E:/audio/project_audio/project_audio.runs/synth_1
+# Command line: vivado.exe -log audio_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_top.tcl
+# Log file: E:/audio/project_audio/project_audio.runs/synth_1/audio_top.vds
+# Journal file: E:/audio/project_audio/project_audio.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JDFC91B, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 6, Host memory: 51413 MB
+#-----------------------------------------------------------
+source audio_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/audio/project_audio/project_audio.srcs/utils_1/imports/synth_1/audio_driver.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/audio/project_audio/project_audio.srcs/utils_1/imports/synth_1/audio_driver.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top audio_top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24624
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:39]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:40]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:41]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:42]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:44]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:45]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:46]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:47]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:48]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:49]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:50]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:53]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:54]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:55]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:56]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:57]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:58]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:59]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:60]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:61]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:65]
+WARNING: [Synth 8-2507] parameter declaration becomes local in audio_top with formal parameter declaration list [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:94]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1261.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'audio_top' [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'i2s_tx' [E:/audio/project_audio/project_audio.srcs/sources_1/new/i2s_tx.sv:23]
+	Parameter AUDIO_DW bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'i2s_tx' (1#1) [E:/audio/project_audio/project_audio.srcs/sources_1/new/i2s_tx.sv:23]
+WARNING: [Synth 8-7137] Register note_clk_reg in module audio_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'audio_top' (2#1) [E:/audio/project_audio/project_audio.srcs/sources_1/new/audio_top.sv:23]
+WARNING: [Synth 8-7129] Port btn[3] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[0] in module audio_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1261.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1261.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1261.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1261.547 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/audio/project_audio/project_audio.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [E:/audio/project_audio/project_audio.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/audio/project_audio/project_audio.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/audio_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/audio_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1267.691 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	  61 Input   28 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 2     
+	   3 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btn[3] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module audio_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[0] in module audio_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    36|
+|3     |LUT1   |     4|
+|4     |LUT2   |    28|
+|5     |LUT3   |    11|
+|6     |LUT4   |    50|
+|7     |LUT5   |    10|
+|8     |LUT6   |    62|
+|9     |FDCE   |    98|
+|10    |FDPE   |     2|
+|11    |FDRE   |    37|
+|12    |FDSE   |     1|
+|13    |IBUF   |     2|
+|14    |OBUF   |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1267.691 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1267.691 ; gain = 6.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1267.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b1ceefd2
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1267.691 ; gain = 6.145
+INFO: [Common 17-1381] The checkpoint 'E:/audio/project_audio/project_audio.runs/synth_1/audio_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file audio_top_utilization_synth.rpt -pb audio_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 30 23:11:35 2025...
